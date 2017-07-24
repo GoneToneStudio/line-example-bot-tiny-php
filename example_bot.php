@@ -50,10 +50,8 @@ foreach ($client->parseEvents() as $event) {
                         'type' => 'text',
                         'text' => '大家好，這是一個範例 Bot OuO
 
-範例程式開源至 GitHub：
-https://github.com/GoneTone/line-example-bot-php
-
-請輸入 /help 開始查詢指令或關鍵詞'
+範例程式開源至 GitHub (包含教學)：
+https://github.com/GoneTone/line-example-bot-php'
                     )
                 )
             ));
