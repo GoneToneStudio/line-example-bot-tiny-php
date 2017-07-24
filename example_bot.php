@@ -14,8 +14,8 @@ date_default_timezone_set("Asia/Taipei"); // 設定時區為台北時區
 require_once('LINEBotTiny.php');
 
 // Channel Access Token
-$channelAccessToken = 'BCCsVQdJox8jsYTMqUpyn+WD3dxQ5v5tXfyE/rBdj62UIpHnOZ8kP7KZnqG/KdU2xJWjKrguQ7Nesnq5J3m13apJYrvLFjPT83W0KHaKuhvEOhN35/dBMY0dpbIA0+CsyeFnoSqcBAhCKhsJEmT0QAdB04t89/1O/w1cDnyilFU=';
-$channelSecret = 'ea69141379a360e0cffc367e89aafdb4'; // Channel Secret
+$channelAccessToken = '<您的 Channel Access Token>';
+$channelSecret = '<您的 Channel Secret>'; // Channel Secret
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 foreach ($client->parseEvents() as $event) {
