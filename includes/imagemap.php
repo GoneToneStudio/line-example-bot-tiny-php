@@ -13,7 +13,7 @@
 ==============================
 {
     "type": "imagemap",
-    "baseUrl": "https://cravatar.eu/helmhead/GoneTone",
+    "baseUrl": "https://api.reh.tw/line/bot/example/assets/images/example",
     "altText": "Example imagemap"
     "baseSize": {
         "height": 1040,
@@ -50,7 +50,7 @@ if (strtolower($message['text']) == "imagemap" || $message['text'] == "圖像地
         'messages' => array(
             array(
                 'type' => 'imagemap', // 訊息類型 (圖片地圖)
-                'baseUrl' => 'https://cravatar.eu/helmhead/GoneTone', // 圖片網址
+                'baseUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example', // 圖片網址 (可調整大小 240px, 300px, 460px, 700px, 1040px)
                 'altText' => 'Example imagemap', // 替代文字
                 'baseSize' => array(
                     'height' => 1040, // 圖片寬
