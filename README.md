@@ -1,14 +1,15 @@
-# Line Bot 基礎範例程式碼教學 (PHP)
+Line Bot 基礎範例程式碼教學 (PHP)
+====================
 在開始之前，可以先加範例機器人！([@omp3220g](https://line.me/R/ti/p/j1sMDEJCyW "@omp3220g"))
 
 #### 範例指令
-- 類型：text > `text` 或 `文字`
-- 類型：image > `image` 或 `圖片`
-- 類型：video > `video` 或 `視頻` 或 `影片`
-- 類型：audio > `audio` 或 `音頻` 或 `音樂`
-- 類型：location > `location` 或 `地址` 或 `位置`
-- 類型：sticker > `sticker` 或 `貼圖` 或 `貼紙`
-- 類型：imagemap > `imagemap` 或 `圖像地圖` 或 `圖片地圖`
+- [類型：text](#類型：text) > `text` 或 `文字`
+- [類型：image](#類型：image) > `image` 或 `圖片`
+- [類型：video](#類型：video) > `video` 或 `視頻` 或 `影片`
+- [類型：audio](#類型：audio) > `audio` 或 `音頻` 或 `音樂`
+- [類型：location](#類型：location) > `location` 或 `地址` 或 `位置`
+- [類型：sticker](#類型：sticker) > `sticker` 或 `貼圖` 或 `貼紙`
+- [類型：imagemap](#類型：imagemap) > `imagemap` 或 `圖像地圖` 或 `圖片地圖`
 - 類型：template (buttons) > `buttons template` 或 `按鈕模板`
 - 類型：template (confirm) > `confirm template` 或 `確認模板`
 - 類型：template (carousel) > `carousel template` 或 `旋轉木馬模板`
