@@ -9,7 +9,7 @@ switch($type[2]){ // 判斷圖片的類型
 
 header("Content-type: image/" . $img_type); // 設定圖檔格式
 
-$percent = 0.4423076923; // 縮略圖比例 公式：1/(1040/460)
+$percent = 1 / (1040 / 460); // 縮略圖比例 公式：1 / (原始圖大小 / 調整後大小)
 
 // 縮略圖尺寸
 list($width, $height) = getimagesize($path);
