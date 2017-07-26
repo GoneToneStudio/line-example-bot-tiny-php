@@ -1,5 +1,5 @@
 <?php
-$path = "example.jpg"; // 圖片所在網址
+$path = "../example.jpg"; // 圖片所在網址
 $type = getimagesize($path); // 取得圖片資訊
 switch($type[2]){ // 判斷圖片的類型
     case 1 : $img_type = "gif"; break;  
@@ -9,7 +9,7 @@ switch($type[2]){ // 判斷圖片的類型
 
 header("Content-type: image/" . $img_type); // 設定圖檔格式
 
-$percent = 1; // 縮略圖比例
+$percent = 0.6730769231; // 縮略圖比例 公式：1/(1040/700)
 
 // 縮略圖尺寸
 list($width, $height) = getimagesize($path);
