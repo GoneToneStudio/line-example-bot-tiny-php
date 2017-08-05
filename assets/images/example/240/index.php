@@ -13,8 +13,8 @@ $percent = 1 / (1040 / 240); // 縮略圖比例 公式：1 / (原始圖大小 / 
 
 // 縮略圖尺寸
 list($width, $height) = getimagesize($path);
-$newwidth = $width * $percent;
-$newheight = $height * $percent;
+$newwidth = round($width * $percent);
+$newheight = round($height * $percent);
 $dst_im = imagecreatetruecolor($newwidth, $newheight);
 
 if ($img_type == "jpeg"){
