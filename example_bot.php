@@ -13,9 +13,31 @@ date_default_timezone_set("Asia/Taipei"); // 設定時區為台北時區
 
 require_once('LINEBotTiny.php');
 
-// Channel Access Token
-$channelAccessToken = '<您的 Channel Access Token>';
-$channelSecret = '<您的 Channel Secret>'; // Channel Secret
+if (file_exists(__DIR__ . '/config.php')) {
+    $config = include __DIR__ . '/config.php'; // 引入設定檔
+    $channelAccessToken = $config['channelAccessToken'];
+    $channelSecret = $config['channelSecret'];
+} else {
+    $configFile = fopen("config.php", "w") or die("Unable to open file!");
+    $configFileContent = "<?php
+/**
+ * Copyright 2017 GoneTone
+ *
+ * Line Bot
+ * 範例 Example Bot 配置文件
+ *
+ * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
+ * 官方文檔：https://devdocs.line.me/en/
+ */
+return [
+    'channelAccessToken' => '',
+    'channelSecret' => ''
+];
+?>";
+    fwrite($configFile, $configFileContent); // 建立文件並寫入
+    fclose($configFile); // 關閉文件
+    error_log("config.php 設定檔內的驗證權杖和粉絲專頁存取權杖尚未設定！", 0); // 輸出錯誤
+}
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 foreach ($client->parseEvents() as $event) {
