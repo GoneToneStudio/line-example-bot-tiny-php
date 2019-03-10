@@ -67,8 +67,7 @@ foreach ($client->parseEvents() as $event) {
         case 'postback':
             //require_once('postback.php'); // postback
             break;
-        default:
-            //error_log("Unsupporeted event type: " . $event['type']);
+        case 'join' || 'follow':
             $client->replyMessage(array(
                 'replyToken' => $event['replyToken'],
                 'messages' => array(
@@ -81,6 +80,9 @@ https://github.com/GoneTone/line-example-bot-php'
                     )
                 )
             ));
+            break;
+        default:
+            //error_log("Unsupporeted event type: " . $event['type']);
             break;
     }
 };
