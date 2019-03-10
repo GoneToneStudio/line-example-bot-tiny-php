@@ -129,7 +129,7 @@ if (strtolower($message['text']) == "confirm template" || $message['text'] == "�
 }
 
 /**
-旋轉木馬模板陣列輸出 Json
+輪播模板陣列輸出 Json
 ==============================
 {
     "type": "template",
@@ -186,7 +186,7 @@ if (strtolower($message['text']) == "confirm template" || $message['text'] == "�
 }
 ==============================
 */
-if (strtolower($message['text']) == "carousel template" || $message['text'] == "旋轉木馬模板") {
+if (strtolower($message['text']) == "carousel template" || $message['text'] == "輪播模板") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(
@@ -194,7 +194,7 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
                 'type' => 'template', // 訊息類型 (模板)
                 'altText' => 'Example buttons template', // 替代文字
                 'template' => array(
-                    'type' => 'carousel', // 類型 (旋轉木馬)
+                    'type' => 'carousel', // 類型 (輪播)
                     'columns' => array(
                         array(
                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
@@ -203,7 +203,7 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
                             'actions' => array(
                                 array(
                                     'type' => 'postback', // 類型 (回傳)
-                                    'label' => 'postback 1', // 標籤 1
+                                    'label' => 'Postback example 1', // 標籤 1
                                     'data' => 'action=buy&itemid=123' // 資料
                                 ),
                                 array(
@@ -225,7 +225,7 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
                             'actions' => array(
                                 array(
                                     'type' => 'postback', // 類型 (回傳)
-                                    'label' => 'postback 2', // 標籤 1
+                                    'label' => 'Postback example 2', // 標籤 1
                                     'data' => 'action=buy&itemid=123' // 資料
                                 ),
                                 array(
@@ -246,4 +246,85 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
         )
     ));
 }
+
+/**
+圖片輪播模板陣列輸出 Json
+==============================
+{
+    "type": "template",
+    "altText": "Example image carousel template",
+    "template": {
+        "type": "image_carousel",
+        "columns": [
+            {
+                "imageUrl": "https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg",
+                "action": {
+                    "type": "postback",
+                    "label": "Postback example",
+                    "data": "action=buy&itemid=123"
+                }
+            },
+            {
+                "imageUrl": "https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg",
+                "action": {
+                    "type": "message",
+                    "label": "Message example",
+                    "text": "Message example"
+                }
+            },
+            {
+                "imageUrl": "https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg",
+                "action": {
+                    "type": "uri",
+                    "label": "Uri example",
+                    "uri": "https://github.com/GoneTone/line-example-bot-php"
+                }
+            }
+        ]
+    }
+}
+==============================
+*/
+/* 未知錯誤，先註解起來，如果你知道原因請幫我修復OxO
+if (strtolower($message['text']) == "image carousel template" || $message['text'] == "圖片輪播模板") {
+    $client->replyMessage(array(
+        'replyToken' => $event['replyToken'],
+        'messages' => array(
+            array(
+                'type' => 'template', // 訊息類型 (模板)
+                'altText' => 'Example image carousel template', // 替代文字
+                'template' => array(
+                    'type' => 'image_carousel', // 類型 (圖片輪播)
+                    'columns' => array(
+                        array(
+                            'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg', // 圖片網址
+                            'action' => array(
+                                'type' => 'postback', // 類型 (回傳)
+                                'label' => 'Postback example', // 標籤
+                                'data' => 'action=buy&itemid=123' // 資料
+                            )
+                        ),
+                        array(
+                            'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg', // 圖片網址
+                            'action' => array(
+                                'type' => 'message', // 類型 (訊息)
+                                'label' => 'Message example', // 標籤
+                                'text' => 'Message example' // 用戶發送文字
+                            )
+                        ),
+                        array(
+                            'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg', // 圖片網址
+                            'action' => array(
+                                'type' => 'uri', // 類型 (連結)
+                                'label' => 'Uri example', // 標籤
+                                'uri' => 'https://github.com/GoneTone/line-example-bot-php' // 連結網址
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    ));
+}
+*/
 ?>
