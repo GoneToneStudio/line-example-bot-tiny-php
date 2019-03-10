@@ -6,7 +6,7 @@
  * 範例 Example Bot (Video)
  *
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
- * 官方文檔：https://devdocs.line.me/en/#video
+ * 官方文檔：https://developers.line.biz/en/reference/messaging-api#video-message
  */
 /**
 陣列輸出 Json

@@ -6,7 +6,7 @@
  * 範例 Example Bot (Image)
  *
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
- * 官方文檔：https://devdocs.line.me/en/#image
+ * 官方文檔：https://developers.line.biz/en/reference/messaging-api#image-message
  */
 /**
 陣列輸出 Json
@@ -18,7 +18,7 @@
 }
 ==============================
 */
-if (strtolower($message['text']) == "image" || $message['text'] == "圖片"){
+if (strtolower($message['text']) == "image" || $message['text'] == "圖片") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(

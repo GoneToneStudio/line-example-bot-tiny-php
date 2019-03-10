@@ -6,8 +6,8 @@
  * 範例 Example Bot (Sticker)
  *
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
- * 官方文檔：https://devdocs.line.me/en/#sticker
- * 貼圖 ID 查詢：https://devdocs.line.me/files/sticker_list.pdf
+ * 官方文檔：https://developers.line.biz/en/reference/messaging-api#sticker-message
+ * 貼圖 ID 查詢：https://developers.line.biz/media/messaging-api/messages/sticker_list.pdf
  */
 /**
 陣列輸出 Json
@@ -19,7 +19,7 @@
 }
 ==============================
 */
-if (strtolower($message['text']) == "sticker" || $message['text'] == "貼圖" || $message['text'] == "貼紙"){
+if (strtolower($message['text']) == "sticker" || $message['text'] == "貼圖" || $message['text'] == "貼紙") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(

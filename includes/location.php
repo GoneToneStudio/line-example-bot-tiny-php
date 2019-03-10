@@ -6,7 +6,7 @@
  * 範例 Example Bot (Location)
  *
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
- * 官方文檔：https://devdocs.line.me/en/#location
+ * 官方文檔：https://developers.line.biz/en/reference/messaging-api#location-message
  */
 /**
 陣列輸出 Json
@@ -20,7 +20,7 @@
 }
 ==============================
 */
-if (strtolower($message['text']) == "location" || $message['text'] == "地址" || $message['text'] == "位置"){
+if (strtolower($message['text']) == "location" || $message['text'] == "地址" || $message['text'] == "位置") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(

@@ -6,7 +6,7 @@
  * 範例 Example Bot 執行主文件
  *
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
- * 官方文檔：https://devdocs.line.me/en/
+ * 官方文檔：https://developers.line.biz/en/reference/messaging-api/
  */
 error_reporting(0); // 不顯示錯誤 (Debug 時請註解掉)
 date_default_timezone_set("Asia/Taipei"); // 設定時區為台北時區
@@ -31,7 +31,7 @@ if (file_exists(__DIR__ . '/config.php')) {
  * 範例 Example Bot 配置文件
  *
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
- * 官方文檔：https://devdocs.line.me/en/
+ * 官方文檔：https://developers.line.biz/en/reference/messaging-api/
  */
 return [
     'channelAccessToken' => '',

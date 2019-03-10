@@ -6,7 +6,7 @@
  * 範例 Example Bot (Template)
  *
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
- * 官方文檔：https://devdocs.line.me/en/#template-messages
+ * 官方文檔：https://developers.line.biz/en/reference/messaging-api#template-messages
  */
 /**
 按鈕模板陣列輸出 Json
@@ -40,7 +40,7 @@
 }
 ==============================
 */
-if (strtolower($message['text']) == "buttons template" || $message['text'] == "按鈕模板"){
+if (strtolower($message['text']) == "buttons template" || $message['text'] == "按鈕模板") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(
@@ -100,7 +100,7 @@ if (strtolower($message['text']) == "buttons template" || $message['text'] == "�
 }
 ==============================
 */
-if (strtolower($message['text']) == "confirm template" || $message['text'] == "確認模板"){
+if (strtolower($message['text']) == "confirm template" || $message['text'] == "確認模板") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(
@@ -186,7 +186,7 @@ if (strtolower($message['text']) == "confirm template" || $message['text'] == "�
 }
 ==============================
 */
-if (strtolower($message['text']) == "carousel template" || $message['text'] == "旋轉木馬模板"){
+if (strtolower($message['text']) == "carousel template" || $message['text'] == "旋轉木馬模板") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(

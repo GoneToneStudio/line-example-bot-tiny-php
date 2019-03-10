@@ -6,7 +6,7 @@
  * 範例 Example Bot (Imagemap)
  *
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
- * 官方文檔：https://devdocs.line.me/en/#imagemap-message
+ * 官方文檔：https://developers.line.biz/en/reference/messaging-api#imagemap-message
  */
 /**
 陣列輸出 Json
@@ -44,7 +44,7 @@
 }
 ==============================
 */
-if (strtolower($message['text']) == "imagemap" || $message['text'] == "圖像地圖" || $message['text'] == "圖片地圖"){
+if (strtolower($message['text']) == "imagemap" || $message['text'] == "圖像地圖" || $message['text'] == "圖片地圖") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(
