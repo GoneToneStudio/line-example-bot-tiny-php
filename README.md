@@ -1,4 +1,4 @@
-Line Bot 基礎範例程式碼教學 (PHP)
+Line Bot 基礎範例程式碼教學 (PHP) - 輕量版 LINEBotTiny.php
 ====================
 
 在開始之前，可以先加範例機器人！([@omp3220g](https://line.me/R/ti/p/j1sMDEJCyW "@omp3220g"))
