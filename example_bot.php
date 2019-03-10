@@ -67,7 +67,21 @@ foreach ($client->parseEvents() as $event) {
         case 'postback':
             //require_once('postback.php'); // postback
             break;
-        case 'join' || 'follow':
+        case 'follow': // 加為好友觸發
+            $client->replyMessage(array(
+                'replyToken' => $event['replyToken'],
+                'messages' => array(
+                    array(
+                        'type' => 'text',
+                        'text' => '您好，這是一個範例 Bot OuO
+
+範例程式開源至 GitHub (包含教學)：
+https://github.com/GoneTone/line-example-bot-php'
+                    )
+                )
+            ));
+            break;
+        case 'join': // 加入群組觸發
             $client->replyMessage(array(
                 'replyToken' => $event['replyToken'],
                 'messages' => array(
