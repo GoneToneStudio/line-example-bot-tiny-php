@@ -186,7 +186,7 @@ if (strtolower($message['text']) == "confirm template" || $message['text'] == "�
 }
 ==============================
 */
-if (strtolower($message['text']) == "carousel template" || $message['text'] == "輪播模板") {
+if (strtolower($message['text']) == "carousel template" || $message['text'] == "旋轉木馬模板" || $message['text'] == "輪播模板") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
         'messages' => array(
