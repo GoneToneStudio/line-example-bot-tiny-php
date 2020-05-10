@@ -260,7 +260,7 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
                 "imageUrl": "https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg",
                 "action": {
                     "type": "postback",
-                    "label": "Postback example",
+                    "label": "Pb example",
                     "data": "action=buy&itemid=123"
                 }
             },
@@ -268,7 +268,7 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
                 "imageUrl": "https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg",
                 "action": {
                     "type": "message",
-                    "label": "Message example",
+                    "label": "Msg example",
                     "text": "Message example"
                 }
             },
@@ -285,7 +285,6 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
 }
 ==============================
 */
-/* 未知錯誤，先註解起來，如果你知道原因請幫我修復OxO
 if (strtolower($message['text']) == "image carousel template" || $message['text'] == "圖片輪播模板") {
     $client->replyMessage(array(
         'replyToken' => $event['replyToken'],
@@ -300,7 +299,7 @@ if (strtolower($message['text']) == "image carousel template" || $message['text'
                             'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg', // 圖片網址
                             'action' => array(
                                 'type' => 'postback', // 類型 (回傳)
-                                'label' => 'Postback example', // 標籤
+                                'label' => 'Pb example', // 標籤
                                 'data' => 'action=buy&itemid=123' // 資料
                             )
                         ),
@@ -308,7 +307,7 @@ if (strtolower($message['text']) == "image carousel template" || $message['text'
                             'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example_1-1.jpg', // 圖片網址
                             'action' => array(
                                 'type' => 'message', // 類型 (訊息)
-                                'label' => 'Message example', // 標籤
+                                'label' => 'Msg example', // 標籤
                                 'text' => 'Message example' // 用戶發送文字
                             )
                         ),
@@ -326,5 +325,3 @@ if (strtolower($message['text']) == "image carousel template" || $message['text'
         )
     ));
 }
-*/
-?>
