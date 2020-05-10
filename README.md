@@ -14,5 +14,6 @@ Line Bot 基礎範例程式碼教學 (PHP) - 輕量版 LINEBotTiny.php
 - [類型：template (buttons)](https://github.com/GoneTone/line-example-bot-php/wiki/類型：template#類型buttons) > `buttons template` 或 `按鈕模板`
 - [類型：template (confirm)](https://github.com/GoneTone/line-example-bot-php/wiki/類型：template#類型confirm) > `confirm template` 或 `確認模板`
 - [類型：template (carousel)](https://github.com/GoneTone/line-example-bot-php/wiki/類型：template#類型carousel) > `carousel template` 或 `輪播模板`
+- [類型：template (image_carousel)](https://github.com/GoneTone/line-example-bot-php/wiki/類型：template#類型image_carousel) > `image carousel template` 或 `圖片輪播模板`
 
 教學請看 Wiki：[點此前往](https://github.com/GoneTone/line-example-bot-php/wiki)
