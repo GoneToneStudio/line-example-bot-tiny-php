@@ -82,4 +82,3 @@ if (strtolower($message['text']) == "imagemap" || $message['text'] == "圖像地
         )
     ));
 }
-?>

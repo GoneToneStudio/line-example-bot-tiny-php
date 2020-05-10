@@ -31,4 +31,3 @@ if (strtolower($message['text']) == "sticker" || $message['text'] == "貼圖" ||
         )
     ));
 }
-?>

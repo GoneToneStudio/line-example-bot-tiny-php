@@ -30,4 +30,3 @@ if (strtolower($message['text']) == "video" || $message['text'] == "視頻" || $
         )
     ));
 }
-?>

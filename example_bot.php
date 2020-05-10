@@ -8,7 +8,6 @@
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
  * 官方文檔：https://developers.line.biz/en/reference/messaging-api/
  */
-error_reporting(0); // 不顯示錯誤 (Debug 時請註解掉)
 date_default_timezone_set("Asia/Taipei"); // 設定時區為台北時區
 
 require_once('LINEBotTiny.php');
@@ -42,6 +41,9 @@ Secret = ""
     fclose($configFile); // 關閉文件
     error_log("config.ini 配置檔建立成功，請編輯檔案填入資料！", 0); // 輸出錯誤
 }
+
+$message = null;
+$event = null;
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 foreach ($client->parseEvents() as $event) {
@@ -99,5 +101,4 @@ https://github.com/GoneTone/line-example-bot-php'
             //error_log("Unsupporeted event type: " . $event['type']);
             break;
     }
-};
-?>
+}

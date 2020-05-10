@@ -39,4 +39,3 @@ if (strtolower($message['text']) == "audio" || $message['text'] == "音頻" || $
         )
     ));
 }
-?>

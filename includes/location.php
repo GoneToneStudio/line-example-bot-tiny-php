@@ -34,4 +34,3 @@ if (strtolower($message['text']) == "location" || $message['text'] == "地址" |
         )
     ));
 }
-?>

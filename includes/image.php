@@ -30,4 +30,3 @@ if (strtolower($message['text']) == "image" || $message['text'] == "圖片") {
         )
     ));
 }
-?>
