@@ -42,6 +42,8 @@ global $client, $message, $event;
     }
 }
 ==============================
+
+按鈕模板訊息 – 官方文檔：https://developers.line.biz/en/reference/messaging-api/#buttons
 */
 if (strtolower($message['text']) == "buttons template" || $message['text'] == "按鈕模板") {
     $client->replyMessage(array(
@@ -102,6 +104,8 @@ if (strtolower($message['text']) == "buttons template" || $message['text'] == "�
     }
 }
 ==============================
+
+確認模板訊息 – 官方文檔：https://developers.line.biz/en/reference/messaging-api/#confirm
 */
 if (strtolower($message['text']) == "confirm template" || $message['text'] == "確認模板") {
     $client->replyMessage(array(
@@ -188,6 +192,8 @@ if (strtolower($message['text']) == "confirm template" || $message['text'] == "�
     }
 }
 ==============================
+
+輪播模板訊息 – 官方文檔：https://developers.line.biz/en/reference/messaging-api/#carousel
 */
 if (strtolower($message['text']) == "carousel template" || $message['text'] == "旋轉木馬模板" || $message['text'] == "輪播模板") {
     $client->replyMessage(array(
@@ -287,6 +293,8 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
     }
 }
 ==============================
+
+圖片輪播模板訊息 – 官方文檔：https://developers.line.biz/en/reference/messaging-api/#image-carousel
 */
 if (strtolower($message['text']) == "image carousel template" || $message['text'] == "圖片輪播模板") {
     $client->replyMessage(array(

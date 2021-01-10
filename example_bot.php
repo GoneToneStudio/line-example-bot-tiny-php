@@ -8,6 +8,7 @@
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
  * 官方文檔：https://developers.line.biz/en/reference/messaging-api/
  */
+
 date_default_timezone_set("Asia/Taipei"); //設定時區為台北時區
 
 require_once('LINEBotTiny.php');
@@ -50,10 +51,10 @@ $event = null;
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 foreach ($client->parseEvents() as $event) {
     switch ($event['type']) {
-        case 'message':
+        case 'message': //訊息觸發
             $message = $event['message'];
             switch ($message['type']) {
-                case 'text':
+                case 'text': //訊息為文字
                     require_once('includes/text.php'); //Type: Text
                     require_once('includes/image.php'); //Type: Image
                     require_once('includes/video.php'); //Type: Video
@@ -68,7 +69,7 @@ foreach ($client->parseEvents() as $event) {
                     break;
             }
             break;
-        case 'postback':
+        case 'postback': //postback 觸發
             //require_once('postback.php'); //postback
             break;
         case 'follow': //加為好友觸發

@@ -8,6 +8,7 @@
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
  * 官方文檔：https://developers.line.biz/en/reference/messaging-api#audio-message
  */
+
 /*
 陣列輸出 Json
 ==============================
@@ -24,7 +25,7 @@ if (strtolower($message['text']) == "audio" || $message['text'] == "音頻" || $
     $audiofileurl = 'https://api.reh.tw/line/bot/example/assets/audios/example.ogg'; //音樂文件網址
 
     //使用 getID3 取得音樂長度 (毫秒)
-    require_once(dirname(dirname(__FILE__)) . '/assets/getid3/getid3.php');
+    require_once(dirname(dirname(__FILE__)) . '/lib/getid3/getid3.php');
     $getID3 = new getID3;
     $file = $getID3->analyze($audiofile);
     $milliseconds = round($file['playtime_seconds'] * 1000); //音樂長度 (毫秒)

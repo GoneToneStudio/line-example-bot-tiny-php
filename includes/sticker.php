@@ -7,8 +7,9 @@
  *
  * 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
  * 官方文檔：https://developers.line.biz/en/reference/messaging-api#sticker-message
- * 貼圖 ID 查詢：https://developers.line.biz/media/messaging-api/messages/sticker_list.pdf
+ * 貼圖 ID 查詢：https://developers.line.biz/media/messaging-api/sticker_list.pdf
  */
+
 /*
 陣列輸出 Json
 ==============================
