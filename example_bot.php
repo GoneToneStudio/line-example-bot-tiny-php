@@ -65,6 +65,7 @@ foreach ($client->parseEvents() as $event) {
                     require_once('includes/sticker.php'); //Type: Sticker
                     require_once('includes/imagemap.php'); //Type: Imagemap
                     require_once('includes/template.php'); //Type: Template
+                    require_once('includes/flex.php'); //Type: Flex
                     break;
                 default:
                     //error_log("Unsupporeted message type: " . $message['type']);

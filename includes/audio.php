@@ -37,7 +37,7 @@ if (strtolower($message['text']) == "audio" || $message['text'] == "音頻" || $
         'messages' => array(
             array(
                 'type' => 'audio', //訊息類型 (音樂)
-                'originalContentUrl' => $audiofileurl, //回復音樂
+                'originalContentUrl' => $audiofileurl, //回覆音樂
                 'duration' => $milliseconds //音樂長度 (毫秒)
             )
         )

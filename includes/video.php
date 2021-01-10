@@ -28,8 +28,8 @@ if (strtolower($message['text']) == "video" || $message['text'] == "視頻" || $
         'messages' => array(
             array(
                 'type' => 'video', //訊息類型 (影片)
-                'originalContentUrl' => 'https://api.reh.tw/line/bot/example/assets/videos/example.mp4', //回復影片
-                'previewImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg' //回復的預覽圖片
+                'originalContentUrl' => 'https://api.reh.tw/line/bot/example/assets/videos/example.mp4', //回覆影片
+                'previewImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg' //回覆的預覽圖片
             )
         )
     ));
