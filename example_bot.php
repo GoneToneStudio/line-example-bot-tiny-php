@@ -27,12 +27,14 @@ if (file_exists(__DIR__ . '/config.ini')) {
     }
 } else {
     $configFile = fopen("config.ini", "w") or die("Unable to open file!");
-    $configFileContent = '; Copyright 2019 GoneTone
+    $configFileContent = '; Copyright 2020 GoneTone
 ;
 ; Line Bot
 ; 範例 Example Bot 配置文件
 ;
-; 此範例 GitHub 專案：https://github.com/GoneTone/line-example-bot-php
+; 此範例 GitHub 專案：https://github.com/GoneToneStudio/line-example-bot-tiny-php
+; 此範例教學文章：https://blog.reh.tw/archives/988
+;
 ; 官方文檔：https://developers.line.biz/en/reference/messaging-api/
 
 [Channel]
@@ -65,7 +67,6 @@ foreach ($client->parseEvents() as $event) {
                     require_once('includes/sticker.php'); //Type: Sticker
                     require_once('includes/imagemap.php'); //Type: Imagemap
                     require_once('includes/template.php'); //Type: Template
-                    require_once('includes/flex.php'); //Type: Flex
                     break;
                 default:
                     //error_log("Unsupporeted message type: " . $message['type']);
