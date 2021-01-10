@@ -38,7 +38,7 @@ global $client, $message, $event;
             {
                 "type": "uri",
                 "label": "Uri example",
-                "uri": "https://github.com/GoneTone/line-example-bot-php"
+                "uri": "https://github.com/GoneToneStudio/line-example-bot-tiny-php"
             }
         ]
     }
@@ -73,7 +73,7 @@ if (strtolower($message['text']) == "buttons template" || $message['text'] == "�
                         array(
                             'type' => 'uri', //類型 (連結)
                             'label' => 'Uri example', //標籤 3
-                            'uri' => 'https://github.com/GoneTone/line-example-bot-php' //連結網址
+                            'uri' => 'https://github.com/GoneToneStudio/line-example-bot-tiny-php' //連結網址
                         )
                     )
                 )
@@ -164,7 +164,7 @@ if (strtolower($message['text']) == "confirm template" || $message['text'] == "�
                     {
                         "type": "uri",
                         "label": "Uri example 1",
-                        "uri": "https://github.com/GoneTone/line-example-bot-php"
+                        "uri": "https://github.com/GoneToneStudio/line-example-bot-tiny-php"
                     }
                 ]
             },
@@ -186,7 +186,7 @@ if (strtolower($message['text']) == "confirm template" || $message['text'] == "�
                     {
                         "type": "uri",
                         "label": "Uri example 2",
-                        "uri": "https://github.com/GoneTone/line-example-bot-php"
+                        "uri": "https://github.com/GoneToneStudio/line-example-bot-tiny-php"
                     }
                 ]
             }
@@ -225,7 +225,7 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
                                 array(
                                     'type' => 'uri', //類型 (連結)
                                     'label' => 'Uri example 1', //標籤 3
-                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' //連結網址
+                                    'uri' => 'https://github.com/GoneToneStudio/line-example-bot-tiny-php' //連結網址
                                 )
                             )
                         ),
@@ -247,7 +247,7 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
                                 array(
                                     'type' => 'uri', //類型 (連結)
                                     'label' => 'Uri example 2', //標籤 3
-                                    'uri' => 'https://github.com/GoneTone/line-example-bot-php' //連結網址
+                                    'uri' => 'https://github.com/GoneToneStudio/line-example-bot-tiny-php' //連結網址
                                 )
                             )
                         )
@@ -288,7 +288,7 @@ if (strtolower($message['text']) == "carousel template" || $message['text'] == "
                 "action": {
                     "type": "uri",
                     "label": "Uri example",
-                    "uri": "https://github.com/GoneTone/line-example-bot-php"
+                    "uri": "https://github.com/GoneToneStudio/line-example-bot-tiny-php"
                 }
             }
         ]
@@ -329,7 +329,7 @@ if (strtolower($message['text']) == "image carousel template" || $message['text'
                             'action' => array(
                                 'type' => 'uri', //類型 (連結)
                                 'label' => 'Uri example', //標籤
-                                'uri' => 'https://github.com/GoneTone/line-example-bot-php' //連結網址
+                                'uri' => 'https://github.com/GoneToneStudio/line-example-bot-tiny-php' //連結網址
                             )
                         )
                     )

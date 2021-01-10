@@ -25,7 +25,7 @@
     "actions": [
         {
             "type": "uri",
-            "linkUri": "https://github.com/GoneTone/line-example-bot-php",
+            "linkUri": "https://github.com/GoneToneStudio/line-example-bot-tiny-php",
             "area": {
                 "x": 0,
                 "y": 0,
@@ -63,7 +63,7 @@ if (strtolower($message['text']) == "imagemap" || $message['text'] == "圖像地
                 'actions' => array(
                     array(
                         'type' => 'uri', //類型 (網址)
-                        'linkUri' => 'https://github.com/GoneTone/line-example-bot-php', //連結網址
+                        'linkUri' => 'https://github.com/GoneToneStudio/line-example-bot-tiny-php', //連結網址
                         'area' => array(
                             'x' => 0, //點擊位置 X 軸
                             'y' => 0, //點擊位置 Y 軸
