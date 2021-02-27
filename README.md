@@ -15,5 +15,6 @@ Line Bot 基礎範例程式碼教學 (PHP) - 輕量版 LINEBotTiny.php
 - [類型：template (confirm)](https://blog.reh.tw/archives/988#%E7%A2%BA%E8%AA%8D%E6%A8%A1%E6%9D%BF%E8%A8%8A%E6%81%AF) > `confirm template` 或 `確認模板`
 - [類型：template (carousel)](https://blog.reh.tw/archives/988#%E8%BC%AA%E6%92%AD%E6%A8%A1%E6%9D%BF%E8%A8%8A%E6%81%AF) > `carousel template` 或 `輪播模板`
 - [類型：template (image_carousel)](https://blog.reh.tw/archives/988#%E5%9C%96%E7%89%87%E8%BC%AA%E6%92%AD%E6%A8%A1%E6%9D%BF%E8%A8%8A%E6%81%AF) > `image carousel template` 或 `圖片輪播模板`
+- [類型：flex](https://blog.reh.tw/archives/988#Flex-%E8%A8%8A%E6%81%AF) > `flex`
 
 完整教學請看：[https://blog.reh.tw/archives/988](https://blog.reh.tw/archives/988)
